@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image" href="images/case-guard-low-resolution-color-logo.png">
+    <title>Case Guard</title>
+    <script>
+      window.addEventListener("load", ()=>{
+        const loader = document.querySelector(".loader")
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () =>{
+          document.body.removeChild(document.querySelector(".loader"));
+        })
+      });
+    </script>
+</head>
+<body>
+
+  <div class="loader"></div>
+
+                   <!----------------- NAV-BAR-START ----------------->
+
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/case-guard-low-resolution-color-logo.png" alt="logo" height="80px" width="90px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active me-2" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="portfolio.html">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item dropdown me-2">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="mobilecase.html">Mobile Case</a></li>
+                      <li><a class="dropdown-item" href="photoframes.html ">Picture Frame</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+                      <!----------------- NAV-BAR-END ----------------->
+
+
+                      <!----------------- HERO SLIDE-START -----------------> 
+
+    <section class="hero-slider" id="hero-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider pic 1.png" class="d-block w-100 h-0" alt="slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider pic 2.png" class="d-block w-100 h-0" alt="slide-2">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+                    <!----------------- HERO SLIDE-END ----------------->
+                    
+                    <!----------------- PRODUCT-SECTION-START -----------------> 
+
+    <section class="prod" id="prod">
+        <div class="container">
+            <div class="prod-heading text-center">
+                <h2>Products We Offer</h2>
+                <P><strong>Our Product</strong></P>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to buildfigfyirgfyriowgf on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prodcut 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prod frame 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prod frame 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prod frame 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="images/prod frame 1.jpg" class="card-img-top" alt="products">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>            
+
+                              <!----------------- PRODUCT-SECTION-ENDS -----------------> 
+
+                               <!----------------- CHOOSE US-SECTION-START ----------------->
+    <section class="chooseus" id="chooseus">
+      <div class="container">
+        <div class="chooseus-heading text-center">
+          <h2>Why Choose Us</h2>
+          <p><strong>Our Services</strong></p>
+        </div>
+        <div class="choose-info text-center">
+          Invidunt eos elitr et aliquyam ipsum. Ipsum duo at invidunt erat aliquyam, justo gubergren vero dolores lorem sed sanctus takimata accusam, consetetur eos kasd lorem ipsum aliquyam ea sit ipsum ea, lorem sed ut erat et justo. Lorem stet magna gubergren est clita, voluptua sed sed elitr vero clita ea,.
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 card-panel">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-button"></i>
+              <p class="panel-info">I and wrought tapping the my that evilprophet countenance. My.</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 card-panel">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-button"></i>
+              <p class="panel-info">I and wrought tapping the my that evilprophet countenance. My.</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 card-panel">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-button"></i>
+              <p class="panel-info">I and wrought tapping the my that evilprophet countenance. My.</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 card-panel">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-button"></i>
+              <p class="panel-info">I and wrought tapping the my that evilprophet countenance. My.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+                    <!----------------- CHOOSE US-SECTION-END ----------------->
+
+                    <!----------------- FOOTER-SECTION-START ----------------->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="footer-logo text-center">
+              <img src="images/case-guard-low-resolution-color-logo.png" alt="footer-logo">
+            </div>
+            <div class="footer-cont text-center">
+              <p><strong>Ebony tempest of the eyes no will faster. Streaming then the the nevermore spoken what door obeisance. 
+                Being for eagerly ancient seat seeming, no tufted countenance i my visiter saintly as thrilled at. Youhere 
+                dreams bore i i lie raven pallas, youhere the the and the. My my his dared.</strong></p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="quick-link-head text-center">
+              <h2>Links</h2>
+            </div>
+            <div class="footer-links text-center">
+              <p><a href="index.html">HOME</a></p>
+              <p><a href="about.html">ABOUT US</a></p>
+              <p><a href="portfolio.html">PORTFOLIO</a></p>
+              <p><a href="">PRODUCTS</a></p>
+              <p><a href="contact.html">CONTACT</a></p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="cont-address">
+              <h3>Office Address</h3>
+              <div class="loc-ico">
+                <i class="fa-solid fa-location-dot"></i>
+                <p><a href="javascript;:">
+                  3/5 Kamarajar street, <br>sindhupoondurai,
+                  Tirunelveli,<br>Junction.
+                  Taminadu - 627001
+                </a>
+                </p>
+              </div>
+            </div>
+            <div class="cont-adress-2">
+              <div class="Cont-add-head">
+                <h3>Contact</h3>
+              </div>
+              <div class="cont-icon">
+                <i class="fa-solid fa-mobile-button"></i>
+                <a href="tel:9842280241">9842280241</a>
+              </div>
+              <div class="cont-icon">
+                <i class="fa-solid fa-mobile-button"></i>
+                <a href="tel:9842242221">9842242221</a>
+              </div>
+            </div>
+            <!-- <div class="soci-icon">
+              <div class="soc-head">
+                <h3>Follow Us On</h3>
+              </div>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>            
+                 <!----------------- FOOTER-SECTION-END ----------------->
+
+                 <!----------------- FALSE-FOOTER-SECTION-START ----------------->
+    <section class="false-footer" id="false-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 cop-rig text-center">
+            Copyrights © 2023 All Rights Reserved by Case Guard
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="soci-icon text-center">
+              <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>             
+    
+    
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

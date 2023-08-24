@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: white !important;
+}
+.nav-link:hover{
+    color: #ffdc00 !important;
+    transition: 0.3s !important;
+}
+.active{
+    color: #ffdc00 !important;
+}
+.dropdown-item{
+    color: #ffdc00 !important;
+}
+.dropdown-menu{
+    background-color: black !important;
+}
+.dropdown-item:hover{
+    background: #212529 !important;
+}
+.dropdown-item:hover{
+    background-color: black;
+}
+.dropdown-item:active {
+    background-color: black !important;
+}
+.navbar-brand img{
+    border-radius: 50%;
+}
+
+/*---------------- PRELOADEER -------------------*/
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    z-index: 100;
+    transition: opacity 1s, visibility 1s;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #303634;
+    border-top-color: #ffdc00;
+    border-radius: 50%;
+    animation: loading 3s ease infinite;
+}
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes loading {
+    from { transform: rotate(0turn)}
+    to { transform: rotate(1turn)}
+}
+/* <!----------------- NAV-BAR-END -----------------> */
+
+/* <!----------------- PRODUCTS-SECTION-START -----------------> */
+.prod-heading h2{
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 50px;
+}
+.prod-heading p{
+    font-size: 30px;
+}
+.prod-heading{
+    margin-bottom: 60px;
+}
+.card{
+    margin-bottom: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+/* <!----------------- CHOOSE US-SECTION-START -----------------> */
+.chooseus{
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-top: 100px;
+}
+.chooseus h2{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.chooseus p{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.choose-info{
+    font-size: 20px;
+}
+.card-panel{
+    margin-bottom: 30px;
+}
+.card-icon{
+    display: flex;
+}
+.card-icon i{
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.choose-info{
+    margin-bottom: 30px;
+}
+.card-icon{
+    border: 1px solid;
+    padding:  0px 20px;
+}
+.panel-info{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.panel-info p{
+    font-size: 25px;
+}
+.card-icon:hover{
+    background-color: #303634;
+    transition: 0.6s;
+}
+/* <!----------------- CHOOSE US-SECTION-END -----------------> */
+
+/* <!----------------- FOOTER-SECTION-START -----------------> */
+footer{
+    background-color: #111111;
+    /* margin-top: 100px; */
+    overflow: hidden;
+}
+.footer-logo img{
+    width: 300px;
+    padding-top: 25px;
+}
+.footer-cont{
+    text-align: justify;
+}
+.footer-cont p{
+    color: white;
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+.quick-link-head h2{
+    color: #ffdc00;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.footer-links a:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+.cont-address h3{
+    color: #ffdc00;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.cont-address{
+    margin-top: 100px;
+}
+.cont-address a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.cont-address a:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+.loc-ico{
+    display: flex;
+}
+.loc-ico i{
+    color: #ffdc00;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.Cont-add-head h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffdc00;
+    margin-top: 20px;
+}
+.cont-icon{
+    display: flex;
+}
+.cont-icon i{
+    color: #ffdc00;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.cont-icon a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.cont-icon a:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+
+.false-footer{
+    background-color: #303634;
+    overflow: hidden;
+    padding: 10px;
+}
+/* .soci-icon{
+    margin-top: 10px;
+} */
+/* .soc-head h3{
+    color: #ffdc00;
+    font-size: 30px;
+    font-weight: 600;
+} */
+.soci-icon{
+    margin-top: 10px;
+}
+.soci-icon i{
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 15px 19px;
+    border-radius: 50%;
+    color: white;
+}
+.soci-icon i:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+.cop-rig{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+/* <!---------------- CONTACT SECTION START -----------------> */
+.contact-bg{
+    background-image: url(./images/topbanner1.jpg);
+    position: relative;
+    background-size: cover;
+    padding: 60px 0px;
+}
+.sect-head h1{
+    color: white;
+    font-size: 40px
+    +609;
+    font-weight: 700;
+}
+.sect-head h4{
+    color: white;
+    font-weight: 500;
+}
+.bot-text{
+    margin-top: 20px;
+}
+.bot-text a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.bot-text a:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+.bot-text i{
+    color: white;
+}
+.bot-text i:hover{
+    color: #ffdc00;
+    transition: 0.3s;
+}
+.bot-text span{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.bot-detail h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.bot-detail{
+    margin-top: 20px;
+}
+.left-cont h5{
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.left-cont-1{
+    display: flex;
+    margin-top: 8px;
+    border: 1px solid #303634;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.left-cont-1 i{
+    color: #ffdc00;
+    font-size: 25px;
+    margin: 20px;
+}
+.left-add{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.left-cont-mail{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.left-cont-phone a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.left-cont-phone{
+    margin-top: 20px;
+}
+.cont-head h2{
+    margin-top: 40px;
+    font-weight: 600;
+}
+.contact-box input{
+    width: 100%;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border: transparent;
+    background-color: #f7f7f7;
+    outline: none;
+}
+.contact-box textarea{
+    margin-top: 20px;
+    padding: 20px;
+    border: transparent;
+    background-color: #f7f7f7;
+    outline: none;
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+.btn-sub button{
+    padding: 10px 70px;
+    margin-top: 18px !important; 
+    font-size: 20px !important;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: #303634;
+}
+.btn-sub button:hover{
+    background-color: #ffdc00;
+    transition: 0.3s;
+}
+.google-map-area{
+    margin-top: 20px;
+}
+
+
+/*---------------- ABOUT PAGE START -------------------*/
+.about-bg{
+   background-image: url(images/pexels-torsten-dettlaff-56904.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 116px;
+}
+.abt-sec-head h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.image-sec img{
+    max-width: 100%;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+.text-image-head h3{
+    margin-top: 60px;
+}
+.text-image-head h3{
+    font-size: 38px;
+    font-weight: 600;
+}
+.text-iamge-para{
+    line-height: 35px;
+    text-align: justify;
+}
+
+
+/*---------------- mobile case  PAGE START -------------------*/
+/* .portfolio-image-section{
+    background-image: url(images/pexels-torsten-dettlaff-193004.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 116px 0px;
+} */
+
+.pagehead{
+    text-align: center;
+    margin-top: 20px;
+}
+.banner{
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/bannerimg1.jpg) ;
+    background-position: center;
+
+}
+.banner-text{
+    text-align: center;
+}
+.mobile-bg{
+    background-color: #303634;
+    height: 100vh;
+}
+
+  
